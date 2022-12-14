@@ -8,7 +8,7 @@ if (moneyISpent > priceOfGood) {
   console.log("I want to buy this good!");
   moneyISpent = moneyISpent + priceOfGood;
   moneyIHave = moneyIHave - moneyISpent;
-}
+}   
 if (moneyIHave > priceOfAnother) {
   console.log("I want to buy another one");
 } else {
