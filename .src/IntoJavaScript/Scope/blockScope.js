@@ -1,10 +1,12 @@
-// block scope using block statement
-if (true) {
-  const say = "Hello";
-  console.log(say);
+const Name = "Sunil Kumar";
+function say() {
+  var name = "shunnu";
+  if (Name === "Sunil") {
+    console.log(Name);
+  } else {
+    console.log("No,Thanks!");
+    console.log(name);
+  }
 }
-// say is block scoped to the if statement
 
-console.log(say);
-
-// if we try to access outside the block it throws error:- ReferenceError: say is not defined
+say();
