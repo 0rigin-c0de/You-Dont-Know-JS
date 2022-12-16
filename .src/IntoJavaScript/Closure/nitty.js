@@ -11,3 +11,5 @@ function func() {
 var num = func();
 
 num(); // --- closure was just observed, man.
+
+// let still has a reference to that scope, and that reference is called closure.
