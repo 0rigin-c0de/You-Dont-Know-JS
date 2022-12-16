@@ -10,4 +10,4 @@ function func() {
 
 var num = func();
 
-num();
+num(); // --- closure was just observed, man.
