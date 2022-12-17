@@ -7,6 +7,6 @@ let user = {
   address: "India",
 };
 
-let hobbies = ["Swimming", "Blogging"];
+let hobbies = ["Swimming", "Coding"];
 
 getName.call(user, hobbies[0], hobbies[1]);
