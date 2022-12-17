@@ -1,15 +1,21 @@
-function fn() {
-  console.log(this.a);
+function greeting(obj) {
+  obj.logMessage = function () {
+    console.log(`${this.name} is ${this.age} years old!`);
+  };
 }
 
-var obj2 = {
-  a: 42,
-  fn: fn,
+const tom = {
+  name: "tom",
+  age: 19,
 };
 
-var obj1 = {
-  a: 2,
-  obj2: obj2,
+const jerry = {
+  name: "jerry",
+  age: 21,
 };
 
-obj1.obj2.fn();
+greeting(tom);
+greeting(jerry);
+
+tom.logMessage();
+jerry.logMessage();
