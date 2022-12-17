@@ -1,10 +1,9 @@
-function fn() {
-  console.log(this.a);
-}
-
-var object = {
-  a: 2,
-  fn: fn,
+let blog = {
+  name: "Sunil",
+  address: "Hashnode",
+  message: function () {
+    console.log(`${this.name} blogs on ${this.address}`);
+  },
 };
 
-object.fn();
+blog.message();
