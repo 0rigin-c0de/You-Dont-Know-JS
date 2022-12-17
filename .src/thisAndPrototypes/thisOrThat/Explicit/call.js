@@ -1,12 +1,12 @@
-// how call method works
-
-let getName = function () {
-  console.log(this.name);
+let getName = function (hobby1, hobby2) {
+  console.log(this.name + " likes " + hobby1 + " , " + hobby2);
 };
 
 let user = {
-  name: "0rigin-c0de",
-  address: "github",
+  name: "Shunnu",
+  address: "India",
 };
 
-getName.call(user);
+let hobbies = ["Swimming", "Blogging"];
+
+getName.call(user, hobbies[0], hobbies[1]);
