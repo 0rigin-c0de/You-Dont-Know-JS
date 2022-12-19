@@ -11,3 +11,6 @@ console.log(b === d);
 
 console.log(a);
 console.log(b);
+
+c = a.toUpperCase();
+console.log(c);
