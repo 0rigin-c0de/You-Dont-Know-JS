@@ -24,3 +24,4 @@ function foo(a, b) {
 foo();
 foo("yeah", "yeah!");
 foo("That's it!", "");
+
