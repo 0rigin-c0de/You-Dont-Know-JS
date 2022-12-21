@@ -11,3 +11,11 @@ var a = {
 };
 
 console.log(parseInt(a)); // 42
+
+console.log("Values");
+console.log(parseInt("0x10"));
+console.log(parseInt(0.000008));
+console.log(parseInt("103", 2));
+console.log(parseInt(0.0000008));
+console.log(parseInt(false, 16));
+console.log(parseInt(parseInt, 16));
