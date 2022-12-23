@@ -1,19 +1,23 @@
-function add(getX, getY, cb) {
-  var x, y;
-  getX(function (xVal) {
-    x = xVal;
-    if (y !== undefined) {
-      cb(x + y);
-    }
-  });
-  getY(function (yVal) {
-    y = yVal;
-    if (x !== undefined) {
-      cb(x + y);
-    }
-  });
+const userLeft = false;
+
+const userReading = false;
+
+function ReadingCallBack(callback, errorCallback) {
+  if (userLeft) {
+    errorCallback({
+      name: "user Left",
+      message: ":(",
+    });
+  } else if (userReading) {
+    errorCallback({
+      name: "user Reading",
+      message: "thanks for reading",
+    });
+  } else {
+    callback("Give a like from you heart");
+  }
 }
 
-add(fetchX, fetchY, function (sum) {
-  console.log(sum);
+ReadingCallBack((message) => {
+  console.log("whaooo :) " + message);
 });
