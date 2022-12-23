@@ -1,4 +1,4 @@
-const userLeft = false;
+const userLeft = true;
 
 const userReading = false;
 
@@ -19,5 +19,5 @@ function ReadingCallBack(callback, errorCallback) {
 }
 
 ReadingCallBack((message) => {
-  console.log("whaooo :) " + message);
+  console.log("whooho :) " + message);
 });
